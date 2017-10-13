@@ -50,6 +50,9 @@ a {
 ul {
 	list-style: none;
 }
+.textarea__list h6 {
+	display: none;
+}
 
 /*Set height and background and border*/
 .header {
@@ -248,7 +251,7 @@ ul {
 	float: left;
 	width: 400px;
 	height: 475px;
-	margin-top: 37px;
+	margin-top: 9px;
 }
 .team__list_item.ceo {
 	padding-left: 60px;
@@ -259,13 +262,15 @@ ul {
     letter-spacing: 0.3px;
 }
 .team__list_item.dev {
+	margin-top: 35px;
 	padding-left: 95px;
 }
 .team__list_item.dev .team__list_item_heading {
-	padding-left: 73px;
+	padding-top: 0px;
+	padding-left: 74px;
 }
 .team__list_item.dev .team__list_item_footer {
-	padding-top: 15px;
+	padding-top: 17px;
     padding-left: 37px;
     letter-spacing: 0.32px;
 }
