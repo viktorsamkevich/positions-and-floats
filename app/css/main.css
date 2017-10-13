@@ -1,0 +1,441 @@
+@font-face {
+	font-family: "Calibri";
+	src: url("../fonts/Calibri.ttf");
+	/* font-style: normal;
+	font-weight: normal; */
+}
+@font-face {
+	font-family: "Bebas";
+	src: url("../fonts/Bebas.ttf");
+	/* font-style: normal;
+	font-weight: normal; */
+}
+@font-face {
+	font-family: "St Marie";
+	src: url("../fonts/StMarie-Thin.otf");
+	/* font-style: normal;
+	font-weight: normal; */
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.app {
+	position: relative;
+	height: 100%;
+	width: 1600px;
+	margin-bottom: 72px;
+}
+.wrapper {
+	position: relative;
+	margin: 0 auto;
+	width: 1200px;
+	height: auto;
+	min-height: 100%;
+}
+.clear::after, .clear::before {
+	content: '';
+	display: table;
+	clear: both;
+}
+img {
+	max-width: 100%;
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+ul {
+	list-style: none;
+}
+
+/*Set height and background and border*/
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 129px;
+	background: #ffffff;
+	z-index: 100;
+
+}
+.wr-slider {
+	height: 408px;
+	margin-top: 129px;
+	background: url('../img/slide.jpg');
+	border-top: 4px solid #fcba50;
+	border-bottom: 4px solid #fcba50;
+	position: relative;
+}
+.wr-textarea {
+	background: #ffffff;
+}
+.wr-team {
+	height: 611px;
+	background: #ffffff;
+	overflow: hidden;
+}
+.wr-form {
+	height: 468px;
+	background: #ffffff;
+
+}
+.footer {
+	height: 72px;
+	margin-top: -72px;
+	background: #fb9c06;
+	border-bottom: 3px solid #cc830f;
+}
+
+/*Create logo and menu*/
+.header__wrapper {
+	position: relative;
+	margin: 0 auto;
+	width: 1600px;
+	height: auto;
+	min-height: 100%;
+}
+.header__logo {
+	position: absolute;
+	top: 5px;
+	left: 218px;
+	
+}
+.header__heading {
+	height: 80px;
+	width: 120px;
+	position: absolute;
+	top: 12px;
+	left: 356px;
+}
+.header__heading h1 {
+	font-size: 37px;
+	font-family: "Calibri";
+	color: #fb9c06;
+	letter-spacing: 1.1px;
+	text-align: center;
+}
+.header__heading h1 span {
+	font-size: 37px;
+	font-family: "Bebas";
+	color: #6e6d6b;
+}
+.header__menu {
+	position: absolute;
+	top: 19px;
+	right: 200px;
+}
+.header__menu_item {
+	background: url(../img/header__menu_sprite.png) no-repeat;
+	display: inline-block;
+	margin-left: 45px;
+	height: 50px;
+	width: 75px;
+}
+.header__menu_item:first-child {
+	margin-left: 0;
+}
+.header__menu_item a {
+	display: block;
+	margin-top: 58px;
+	font-size: 22px;
+	font-family: "Calibri";
+	color: #9e9b9b;
+	letter-spacing: 0.7px;
+}
+.header__menu_item:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	transform: scale(0.92);
+}
+.header__menu_item.home {background-position: 1px 0px;}
+.header__menu_item.about {background-position: -59px 0px;}
+.header__menu_item.work {background-position: -149px 0px;}
+.header__menu_item.blog {background-position: -223px -1px;}
+.header__menu_item.contact {background-position: -287px 0px;}
+
+/* Create slider section */
+.slider__question_one {
+	position: absolute;
+	left: 20px;
+	top: 129px;
+	background: #000;
+	opacity: 0.69;
+	width: 381px;
+	height: 66px;
+}
+.slider__question_one h2 {
+	font-size: 37px;
+	font-family: "Bebas";
+	color: #fb9c06;
+	padding-top: 7px;
+	padding-left: 30px;
+	letter-spacing: 0.6px;
+}
+.slider__question_two {
+	position: absolute;
+	left: 11px;
+	top: 223px;
+	background: rgb(255, 175, 18);
+	opacity: 0.702;
+	width: 396px;
+	height: 76px;
+}
+.slider__question_two h2 {
+	font-size: 37px;
+	font-family: "Bebas";
+	color: #6e6d6b;
+	padding-top: 9px;
+	padding-left: 31px;
+	letter-spacing: 0.6px;
+}
+
+/* Create textarea section */
+.textarea__list {
+	
+}
+
+.textarea__list_item {
+	float: left;
+	width: 300px;
+	height: 190px;
+	margin-bottom: 12px;
+}
+.textarea__list_item p {
+	font-weight: 600;
+	padding: 27px 21px 0 22px;
+	font-size: 15px;
+	font-family: "Calibri";
+	color: rgb(0, 0, 0);
+	line-height: 1.547;
+	text-align: left;
+	letter-spacing: 0.264px;
+	height: 165px;
+	overflow: hidden;
+}
+.textarea__list_item a {
+	font-weight: 400;
+	padding-left: 195px;
+	padding-top: -1px;
+	font-size: 17px;
+	font-family: "Calibri";
+	font-style: italic;
+	color: #ffac00;
+	text-align: left;
+	letter-spacing: 0.264px;
+}
+
+/* Create team section */
+/* .team__list {
+	float: left;
+} */
+.team__list h3 {
+	display: block;
+	font-weight: 400;
+	font-size: 40px;
+	font-family: "St Marie";
+	color: rgb(255, 156, 0);
+	width: 282px;
+    padding-bottom: 0px;
+    margin-top: 11px;
+	margin-left: 470px;
+	letter-spacing: 1.1px;
+	border-bottom: 2px solid;
+}
+.team__list_item {
+	float: left;
+	width: 400px;
+	height: 475px;
+	margin-top: 37px;
+}
+.team__list_item.ceo {
+	padding-left: 60px;
+}
+.team__list_item.ceo .team__list_item_footer {
+	padding-left: 40px;
+    padding-top: 17px;
+    letter-spacing: 0.3px;
+}
+.team__list_item.dev {
+	padding-left: 95px;
+}
+.team__list_item.dev .team__list_item_heading {
+	padding-left: 73px;
+}
+.team__list_item.dev .team__list_item_footer {
+	padding-top: 15px;
+    padding-left: 37px;
+    letter-spacing: 0.32px;
+}
+.team__list_item p {
+	padding-top: 28px;
+}
+.team__list_item img {
+	width: 312px;
+	height: 312px;
+	border-radius: 50% 50%;
+	overflow: hidden;
+	border: 10px solid #ffb540;
+}
+.team__list_item_heading {
+	font-size: 22px;
+	font-family: "Calibri";
+	color: rgb(110, 109, 107);
+	padding-left: 55px;
+	overflow: hidden;
+}
+.team__list_item_heading span {
+	color: #fb9c06;
+	letter-spacing: 0.7px;
+}
+.team__list_item_footer {
+	padding-top: 20px;
+	padding-left: 32px;
+	font-size: 15px;
+	font-family: "Calibri";
+	color: rgb(51, 51, 51);
+	line-height: 1.544;
+	text-align: left;
+	width: 300px;
+	height: 106px;
+	overflow: hidden;
+	letter-spacing: 0.33px;
+}
+/* Create form */
+.form__heading {
+	display: block;
+    font-weight: 400;
+    font-size: 40px;
+    font-family: "St Marie";
+    color: rgb(255, 156, 0);
+    width: 393px;
+    margin-top: 4px;
+    margin-left: 422px;
+    letter-spacing: 1.1px;
+    border-bottom: 2px solid;
+}
+.form {
+	margin-top: 66px;
+}
+.form p {
+	padding-bottom: 70px;
+}
+.form p:last-child {
+	height: 100px;
+}
+.form p label {
+	float: left;
+	font-size: 24px;
+	font-family: "St Marie";
+	color: rgb(251, 156, 6);
+	line-height: 0.965;
+	text-align: left;
+}
+.form p input {
+	float: right;
+	height: 33px;
+	width: 1067px;
+	background-color: rgb(247, 246, 245);
+	opacity: 0.922;
+	box-shadow: inset 6px 3px 0px 0px rgba(198, 197, 197, 0.75);
+	border: none;
+	padding: 5px 10px 5px 10px;
+}
+.form p input:hover {
+  box-shadow: 0 0 0 1px #ffac00 inset, 0 1px 2px rgba(0,0,0,0.2) inset;
+}
+.form p input:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px #ffac00 inset, 0 1px 2px rgba(0,0,0,0.2) inset, 0 0 4px rgba(247, 197, 18,0.5);
+  transition: 0.2s linear;
+}
+.form p textarea {
+	float: right;
+	height: 90px;
+	width: 1067px;
+	background-color: rgb(247, 246, 245);
+	opacity: 0.922;
+	box-shadow: inset 6px 3px 0px 0px rgba(198, 197, 197, 0.75);
+	border: none;
+	padding: 5px 10px 5px 10px;
+}
+.form p textarea:hover {
+  box-shadow: 0 0 0 1px #ffac00 inset, 0 1px 2px rgba(0,0,0,0.2) inset;
+}
+.form p textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px #ffac00 inset, 0 1px 2px rgba(0,0,0,0.2) inset, 0 0 4px rgba(247, 197, 18,0.5);
+  transition: 0.2s linear;
+}
+.form p label[for="user"] {
+	padding-top: 1px;
+}
+.form p label[for="email"] {
+	padding-top: 6px;
+    letter-spacing: 1.02px;
+}
+.form p label[for="text"] {
+	padding-top: 6px;
+}
+.form button {
+	position: absolute;
+    bottom: 54px;
+    right: 32px;
+	background-color: rgb(251, 156, 6);
+    width: 176px;
+    height: 46px;
+    font-size: 30px;
+    font-family: "St Marie";
+    color: rgb(255, 255, 255);
+    line-height: 0.772;
+    letter-spacing: 1.05px;
+    text-align: center;
+    border: 1px solid #fdd18b;
+    box-shadow: 0 4px 0px 0 #cc8310;
+}
+.form button:hover {
+	cursor: pointer;
+	font-weight: 700;
+	color: rgb(251, 156, 6);
+	background-color: rgb(255, 255, 255);
+	box-shadow: 4px 4px 4px 4px #cc8310;
+}
+
+/* Create footer */
+.footer .footer__copyright h4{
+	font-weight: 600;
+	font-size: 33px;
+	font-family: "St Marie";
+	color: rgb(255, 255, 255);
+	letter-spacing: 0.9px;
+	padding-top: 13px;
+	padding-left: 159px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#comment p {
+	margin: 0 0 5px; /* Отступ снизу */
+}
+#comment label {
+	width: 110px; /* Ширина текста */
+	float: left; /* Выстраиваем по горизонтали */
+	text-align: right; /* Текст по правому краю */
+	padding-right: 10px; /* Поле справа */
+}
+#comment input[type="text"], #comment textarea {
+	width: 320px; /* Ширина текстовых полей */
+}
+input:required {
+	border: 1px solid red; /* Красная рамка для обязательных полей */
+}
